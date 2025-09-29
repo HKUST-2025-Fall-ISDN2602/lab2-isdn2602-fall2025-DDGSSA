@@ -8,7 +8,7 @@
 const float LowPassFilterAlpha = 0.3f ; //*** Set filter constant for accelerometer which Alpha + Beta = 1.0f ***
 const float LowPassFilterBeta =  0.7f ;  
 
-const float ComplementaryFilterALPHA = 0.98f;  
+const float ComplementaryFilterALPHA = 0.0f;  
 const float dt =  0.01f;    //*** Set the loop time as 10 ms***
 
 /*------------ DO NOT Change the code BELOW ------------*/
@@ -27,11 +27,11 @@ float yaw = 0.0f;
 
 /*------------ DO NOT Change the code ABOVE ------------*/
 /*Enable Filter*/
-bool Filter = true;           //True:  Enable
+bool Filter =true;           //True:  Enable
                               //False: Disale
 
 /*Enable Serial Plot*/
-bool SerialPlotGrapgh = false; //True:  Enable
+bool SerialPlotGrapgh = true; //True:  Enable
                               //False: Disale
 
 /*------------ DO NOT Change the code BELOW ------------*/
